@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons CSS (untuk ikon) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid d-flex p-0">
+    <!-- Sidebar -->
+    <aside class="sidebar ">
+      <div class="logo ">Portfolio</div>
+      <nav class="">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#home">
+              <i class="bi bi-house-door"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">
+              <i class="bi bi-person-circle"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#portfolio">
+              <i class="bi bi-briefcase"></i> Portfolio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#cv">
+              <i class="bi bi-file-earmark-person"></i> CV
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">
+              <i class="bi bi-envelope"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+  
+      <button id="theme-toggle" class="btn btn-danger mt-auto">
+        <i class="bi bi-moon"></i> tema
+      </button>
+    </aside>
+    
+    <meta name="description" content="Portfolio website of Putri Molantong, a passionate web developer.">
+    <meta name="keywords" content="web developer, portfolio, Putri Molantong, HTML, CSS, JavaScript">
+    <meta name="author" content="Putri Molantong">
+    
+
+  <!-- Main Content -->
+  <main class="main-content flex-fill">
+    <section id="home" class="hero d-flex flex-column align-items-center justify-content-center text-center py-5" data-aos="fade-up">
+      <!-- Video Background -->
+      <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source src="codingan.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- Content over video -->
+      <div class="content-overlay">
+        <h1 class="fw-bold">Hello, I am <span class="text-danger">Putri</span></h1>
+        <p class="fs-5">A Passionate Web Developer</p>
+        <button class="btn btn-danger btn-lg ripple-button">
+          <i class="bi bi-person-plus"></i> Hire Me
+        </button>
+      </div>
+    </section>
+  </main>
+</div>
+      
+      
+      <!-- About Section -->
+      <section id="about" class="py-5 bg-light text-center">
+        <div class="container">
+          <img src="TAI.jpg" class="img" alt="fotoku">
+          <h2><i class=""></i> About Me</h2>
+          <p>Saya, Putri Molantong adalah pribadi ceria dan bersemangat menghadapi hal baru, dengan kedisiplinan tinggi dalam menghargai waktu. Saya mampu bekerja secara individu maupun tim, serta memiliki kemampuan berdiskusi untuk mencari solusi terbaik. Saya menghargai profesionalisme dan fokus dalam bekerja, sehingga kurang menyukai gangguan yang tidak relevan. Bagi saya, dedikasi dan kerja sama adalah kunci kesuksesan..</p>
+        </div>
+      </section>
+      
+      <section id="portfolio" class="py-5 text-center">
+        <div class="container">
+          <h2 data-aos="fade-up"><i class=""></i> My Portfolio</h2>
+          <div class="row">
+            <div class="col-md-4" data-aos="flip-left">
+              <div class="card">
+                <img src="perawat.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Project 1</h5>
+                  <p class="card-text">Project perawat</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="flip-up">
+              <div class="card">
+                <img src="figma.jpg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                  <h5 class="card-title">Project 2</h5>
+                  <p class="card-text">Project figma</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="flip-right">
+              <div class="card">
+                <img src="virus.jpg" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                  <h5 class="card-title">Project 3</h5>
+                  <p class="card-text">Project virus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+      
+      <!-- CV Section -->
+      <section id="cv" class="py-5 bg-light text-center">
+        <div class="container">
+          <h2><i class=""></i> My CV</h2>
+          <a href="CV.pdf" class="btn btn-danger" download>
+            <i class="bi bi-download"></i> Download CV
+          </a>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+      <section id="contact" class="py-5 text-center">
+        <div class="container">
+          <h2><i class="responsi/virus.jpg"></i> Contact Me</h2>
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">
+              <i class="bi bi-send"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+      <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 text-center">Putri Malika Molantong</div>
+                      </div>
+        </div>
+        <div class="mt-4">
+          <h5>Social Media:</h5>
+          <a href="https://www.instagram.com/putry_molantong" target="_blank" class="text-danger mx-2">
+            <i class="bi bi-instagram fs-4"></i>
+          </a>
+          <a href="https://www.facebook.com/Putry Molantong" target="_blank" class="text-primary mx-2">
+            <i class="bi bi-facebook fs-4"></i>
+          </a>
+        </div>
+    </div>
+    </div>
+    </main>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
